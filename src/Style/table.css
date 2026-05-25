@@ -1,0 +1,65 @@
+table {
+  border-collapse: collapse;
+  width: 80%;
+  background-color:white;
+  margin-left: 290px;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+
+.totalnum{
+    margin-left: 290px;
+margin-top: -90px;}
+    .emph1{
+        margin-left: 290px;}
+
+th,
+td {
+  border: 1px solid lightgray;
+  padding: 20px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.inp1{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-top: 40px;
+    margin-left: 1400px;
+    width: 300px;
+
+}
+
+th {
+  background-color: transparent;
+  border-top: 0px transparent;
+
+    
+}
+r:first-child {
+  background-color: transparent;
+  
+}
+thead>tr>th:first-child {
+  background-color: transparent;
+  border-left: 0px transparent;
+}
+
+thead>tr>th:last-child {
+  background-color: transparent;
+  border-left: 0px transparent;
+}
+td:first-child {
+  background-color: transparent;
+  border-left: 0px transparent;
+}
+td:last-child {
+  background-color: transparent;
+  border-right: 0px transparent;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+}

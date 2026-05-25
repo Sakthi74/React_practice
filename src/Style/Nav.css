@@ -1,0 +1,44 @@
+.size{
+    height: 50 px;
+    width: 50px;
+    padding: 3px;
+    background-color: darkred;
+    color: white;
+margin-bottom: 8px;}
+nav {
+  background-color: white;
+  display: flex;
+    justify-content: space-between;
+    height: 70px;
+  
+}
+.prof{
+   height: 50 px;
+    width: 50px;
+    padding: 3px;
+}
+.rightelems{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.imglogo{height: 150px;
+    width: 150px;
+   
+    
+
+}
+.leftelems{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+.rightelems>h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100px ;
+   
+    
+    
+    
+}   
