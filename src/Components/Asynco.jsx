@@ -11,6 +11,7 @@ const Asynco = () => {
         setloading(true)
         const data = await fetch("https://jsonplaceholder.typicode.com/users") 
         const jas = await data.json()
+        console.log(jas)
         setuserdata(jas)
         setloading(false)
       } catch(err) {
