@@ -1,4 +1,5 @@
 import React, {  useEffect, useState } from 'react'
+import Empdetails from './Empdetails'
 
 
 const Asynco = () => {
@@ -19,7 +20,7 @@ const Asynco = () => {
         setloading(false)
       } finally {
         console.log("data is fetched")
-        console.log("this one is for merge understanding")
+        
       }
     }
     fetchData()
@@ -31,25 +32,15 @@ const Asynco = () => {
 
 
   return (
-    <div>
-      {loading ? <h1>data is loading</h1> : <h1>no data found</h1>}
-      {!loading && userdata.map((item) => (
-        <table key={item.id} border="1">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-            </tr>
-          </tbody>
-        </table>
-      ))}
-    </div>
+    <>
+    <h1>Employee Details</h1>
+    {loading ? <p>Loading...</p> : null}
+    {!(loading)&&
+    
+    userdata.map((user)=>(<Empdetails key={user.id} id={user.id} name={user.username} email={user.email} address={user.address}/>))
+    
+    }
+    </>
   )
 }
 
