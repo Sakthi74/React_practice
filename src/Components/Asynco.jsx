@@ -19,6 +19,7 @@ const Asynco = () => {
         setloading(false)
       } finally {
         console.log("data is fetched")
+        console.log("this one is for merge understanding")
       }
     }
     fetchData()
