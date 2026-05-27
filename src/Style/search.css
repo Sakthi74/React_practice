@@ -1,0 +1,57 @@
+.formstyle{
+    padding: 50px;
+    background-color: white;
+    height: 440px;
+    border-radius: 10px;
+    
+    width: 240px;
+   
+    margin-top: 20px;
+    align-items: center;
+    justify-items: center;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    height: 25px;
+    margin-top: 20px;
+    width: 100%;
+}
+sup{
+    color: red;
+}
+.sbutton{
+    padding: 10px;
+    background-color: lightcoral;
+    width: 260px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold ;
+    height: 40px;
+    margin-top: 20px;
+}
+.sbutton:hover {
+    background-color: red;
+    cursor: pointer;
+    
+}
+
+.sbutton2{
+    padding: 10px;
+    background-color: white;
+    width: 260px;
+    border-radius: 5px;
+    color: lightcoral;
+    font-weight: bold;
+    height: 40px;
+    border: 1px solid lightcoral;
+    margin-top: 20px;
+}
+
+.sbutton2:hover {
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+}

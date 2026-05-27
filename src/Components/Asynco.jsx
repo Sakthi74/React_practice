@@ -2,10 +2,13 @@ import React, {  useEffect, useState } from 'react'
 import Empdetails from './Empdetails'
 import '../Style/table.css'
 import Nav from './Nav'
+import Search from './Search'
+import Sidebar from './Sidebar'
 
 const Asynco = () => {
   const[userdata,setuserdata]=useState([])
   const[loading,setloading]=useState(true)
+  const[search,setsearch]=useState("")
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,19 +31,26 @@ const Asynco = () => {
   }, [])
 
 function number(){
-  const num = userdata.length
+  const num = filteredUsers.length
   return num
 }
     
+const filteredUsers = userdata.filter((user) =>
+  user.username.toLowerCase().includes(search.toLowerCase())
+)
   
 
 
   return (
     <>
     <Nav/>
-    {loading ? <p>Loading...</p> : null}
-    <input type="text"  className='inp1' placeholder='search'/>
+   
     <h1 className='emph1' >Employees</h1>
+    <div className='childcomponents'>
+       <Sidebar/>  
+    <Search search_variable={search} setsearch={setsearch}/>
+    {loading ? <p>Loading...</p> : null}
+    {/* <input type="text"  className='inp1' placeholder='search'/> */}
     <table>
 <thead>
   <tr>
@@ -52,7 +62,7 @@ function number(){
 </thead>
     <tbody>
       
-      {!(loading)&& userdata.map((user)=>(<Empdetails key={user.id} id={user.id} name={user.username} email={user.email} address={user.address}/>))
+      {!(loading)&& filteredUsers.map((user)=>(<Empdetails key={user.id} id={user.id} name={user.username} email={user.email} address={user.address} useerd={user}/>))
     
     }
     </tbody>
@@ -60,6 +70,7 @@ function number(){
    
 
 </table>
+</div>
 <h3 className='totalnum'>Showing <strong>{number()}</strong> employees</h3>
     
    

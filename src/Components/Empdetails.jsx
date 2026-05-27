@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Style/table.css'
 
-const Empdetails = ({ id, name, email, address }) => {
+const Empdetails = ({ id, name, email, address, useerd }) => {
   return (
     <tr>
       <td>{id}</td>
