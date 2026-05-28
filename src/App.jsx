@@ -5,15 +5,14 @@ import Saleschart from './Components/Saleschart'
 
 import Linechart from "../src/Components/Linechart"
 import PieChart from '../src/Components/Piechart'
+import SalesData from './Components/Salesdata'
+import Productgraph from './Components/Productgraph'
+import Analyticspage from './pages/Analyticspage'
 
 const App = () => {
   return (
     <div>
-      {/* <Asynco/> */}
-      {/* <Search/> */}
-      {/* <Saleschart/> */}
-{/* <Linechart/> */}
-<PieChart/>
+   <Analyticspage/>
          </div>
   )
 }

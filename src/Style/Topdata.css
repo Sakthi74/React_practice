@@ -1,0 +1,27 @@
+.topdata{
+    
+    background-color: white;text-align: center;
+
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.topdata:hover{
+    
+    background-color: white;text-align: center;
+    transform: scale(1.1,1.1);
+    padding: 20px;
+    width: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.topdataoverall{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    justify-content: center;
+    
+}
