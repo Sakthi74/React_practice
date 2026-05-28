@@ -1,6 +1,7 @@
 import React, { useEffect,useState} from 'react'
 import Productgraph from './Productgraph'
 import Topdata from './Topdata'
+import Salespiechart from "./SalesPiechart"
 const SalesData = () => {
     const [salesdata,setSalesdata]=useState([])
   
@@ -22,6 +23,7 @@ console.log(salesdata.title)
     <div>
       <Topdata data={salesdata} />
     <Productgraph data={salesdata} />
+    <Salespiechart data={salesdata}/>
     </div>
   )
 }
