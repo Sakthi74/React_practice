@@ -1,0 +1,105 @@
+.menucategorysidebarul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+   
+    width: 200px;
+
+    text-align: center;
+}
+
+.menucategoryli1{
+    background-color: #ca2020;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.menucategoryli2 {
+    background-color: #434e8c;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.menucategoryli3 {
+    background-color: #a32d2d;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.menucategoryli4 {
+    background-color: #7426d4;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.menucategoryli5 {
+    background-color: #3a2395;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.menucategoryli6 {
+    background-color: #fdd831;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: #fda79b;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.menucategoryli7{
+    background-color: #cf1f8e;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.menucategoryli8{
+    background-color: #237533;
+    padding: 40px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}

@@ -1,0 +1,39 @@
+.searchbardiv{
+    display: flex;
+    background-color: #e84c3d;
+    gap: 20px ;
+    padding: 20px;
+    width: 50%;
+}
+.sideburger{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: aliceblue;
+    background-color: black;
+    font-weight: bolder;
+}
+.size-6{
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+}
+.h4quickorder{
+    color: white;
+    font-weight: lighter;
+    font-family: 'arial';
+}
+textarea{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 3px;
+    
+}
+
+.scansearchinput{
+    width: 400px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 6px;
+}
