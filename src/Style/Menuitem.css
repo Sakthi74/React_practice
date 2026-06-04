@@ -36,3 +36,32 @@ top: 0.1px;
     margin-left: 75px;
 
 }
+.edit-button{
+  position: absolute;
+  
+  
+  padding: 5px 10px;
+  background-color: #e84c3d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  border: white solid 1px;
+  cursor: pointer;
+  margin-left:50px ;
+  padding:12px;
+  margin-bottom: 10px;
+  width: 80px;
+
+}
+.delete-button{
+  position: absolute;
+  top: 0.1px;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  margin-left: 150px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "../Style/AddItemPopup.css";
 
-const Additempopup = ({ closePopup,addItem }) => {
+const Additempopup = ({ closePopup,addItem,editItem,selecteditem,updateItem }) => {
   const [trackOpen, setTrackOpen] = useState(false);
     const [weightOpen, setWeightOpen] = useState(false);
     const [formData,setFormData]=useState({
@@ -11,18 +11,34 @@ const Additempopup = ({ closePopup,addItem }) => {
   category:"",
   manufacturer:""
     })
-    const handlechange=(e) => {setFormData({...formData, [e.target.name]: e.target.value})
+    const handlechange=(e) => { console.log(e.target.name, e.target.value);
+  setFormData({...formData, [e.target.name]: e.target.value})
         
     }
 
-    const handleSave = () => {
-        
-      const newitem = { id: Date.now(),
-          image: "https://picsum.photos/200",
-          ...formData
+  const handleSave = () => {
+    if (editItem) {
+      updateItem({
+        ...selecteditem,
+        ...formData
+      });
+    } else {
+      const newitem = {
+        id: Date.now(),
+        image: "https://picsum.photos/200",
+        ...formData
       };
       addItem(newitem);
     };
+    closePopup();
+  }
+  
+  useEffect(() => {
+    if (selecteditem) {
+      setFormData(selecteditem)
+    }
+  }, [selecteditem])
+  console.log("Selected Item:", selecteditem)
 
   return (
     <div className="popup-overlay">
@@ -53,17 +69,23 @@ const Additempopup = ({ closePopup,addItem }) => {
           <div className="category-row">
             <div className="category-left">
               <span className="category-label">SELECT CATEGORY</span>
-              <select className="category-select" onChange={handlechange}>
-                <option>Appetizers</option>
-                <option>Drinks</option>
-                <option>Desserts</option>
-              </select>
+              <select
+  className="category-select"
+  name="category"
+  onChange={handlechange}
+>
+  <option value="Appetizers">Appetizers</option>
+  <option value="Wraps">Wraps</option>
+  <option value="Breakfast">Breakfast</option>
+  <option value="Soup salad">Soup salad</option>
+  <option value="Sandwich">Sandwich</option>
+  <option value="Bottled Beer">Bottled Beer</option>
+  <option value="Dinner">Dinner</option>
+  <option value="Openitem">Openitem</option>
+</select>
             </div>
             <button className="red-plus-btn">+</button>
           </div>
-
-          {/* Additional Category */}
-          <input type="text" placeholder="Select Additional Category" name="category" className="popupinput full-width" onChange={handlechange} />
 
           {/* Default Tax */}
           <select className="popupinput full-width" >

@@ -103,3 +103,8 @@
 
 
 }
+.active{
+    border-left: 15px solid rgb(136, 94, 94);
+    transform:scale(20px,20px),
+    
+}

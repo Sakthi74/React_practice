@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Style/Menusearchbar.css"
 
-const Menusearchbar = () => {
+const Menusearchbar = ({ setsearchitem, searchitem }) => {
   return (
     <> <div className='searchbardiv'>
       <p>
@@ -22,7 +22,7 @@ const Menusearchbar = () => {
 
       <h4  className='h4quickorder'>QUICK ORDER</h4>
       <textarea name="Ref#" id=""></textarea>
-      <input className='scansearchinput' type="search" placeholder='SCAN OR SEARCH AN ITEM' />
+      <input className='scansearchinput' type="search" placeholder='SCAN OR SEARCH AN ITEM' value={searchitem} onChange={(e) => setsearchitem(e.target.value)}   />
       
       
     </div>
